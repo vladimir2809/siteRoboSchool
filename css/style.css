@@ -1,0 +1,85 @@
+@font-face{
+    font-family: Jost;
+    src: url(../fonts/Jost-Regular.ttf);
+}
+body {
+       margin: 0;
+}
+header{
+    width: 100%;
+    min-width: 1000px;
+    height: 1080px;
+/*    margin: 0;*/
+    background: #141024;
+}
+header #upHead{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 30px;
+   margin-left: 30px;
+   margin-right: 30px;
+}
+header #upHead h1{
+    margin: 0px;
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: white;
+}
+header #upHead div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+header #upHead div p{
+    margin: 0px;
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    /*text-align: center;*/
+    color: white;
+}
+/* Record Course*/
+header #recordCourse{
+    display: flex;
+    justify-content: center;
+}
+header #recordCourse div:first-child{
+    margin-top: 10%;
+}
+header #recordCourse div:first-child h1{
+    margin-bottom: 50px;
+    font-family: Jost;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 112px;
+    text-align: left;
+    color: white;
+}
+header #recordCourse div:first-child p{
+    width: 478px;
+    margin-bottom: 50px;
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: white;
+}
+header #recordCourse div:first-child button{
+    width: 260px;
+    height: 80px;
+    background: #D52027;
+    color: white;
+}
+header #recordCourse div:last-child{
+}
+header #recordCourse div:last-child img:last-child{
+    /*position:relative;
+    left: -400px;*/
+    margin-left: -650px;
+    margin-top: 82px;
+}
