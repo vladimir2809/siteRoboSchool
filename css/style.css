@@ -338,3 +338,109 @@ header #recordCourse div:last-child img:last-child{
 #packsFlex .packItem:first-child button{
     margin-top: 52px;
 }
+/*
+    FOOTER
+*/
+footer{
+    margin-top: 120px;
+}
+/* foot red*/
+footer #footRed{
+    width: 100%;
+    min-width: 1300px;
+    height: 460px;
+    background-color: #D52027;
+}
+#footRed #footRedCont{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    width: 1100px;
+    height: 460px;
+    margin: 0 auto 0 auto;
+}
+#footRedCont #footRedText{
+    width: 476px;
+    margin-top: -100px;
+    color: white;
+}
+#footRedCont #footRedText h3{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: Jost;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46.8px;
+    text-align: left;
+}
+#footRedCont #footRedText h3 span{
+    font-family: Jost;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46.8px;
+    text-align: left;
+}
+#footRedCont #footRedForm{
+    width: 500px;
+}
+#footRedCont #footRedForm input[type=text]{
+    width: 500px;
+    height: 64px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#footRedCont #footRedForm input[type=text]::placeholder{
+    padding-left: 10px;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.01px;
+    text-align: left;
+}
+#footRedCont #footRedForm button{
+    width: 500px;
+    height: 64px;
+    border: 1px solid #141024;
+    border-radius: 5px;
+    background-color: #141024;
+    color: white;
+}
+/* foot blue*/
+#footBlue{
+    width: 100%;
+    min-width: 1300px;
+    height: 150px;
+    background-color: #141024;
+}
+#footBlue #footBlueCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+    height: 150px;
+    margin: 0 auto 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    box-sizing: border-box;
+
+}
+#footBlue #footBlueCont h2{
+    margin-bottom: 5px;
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+}
+#footBlue #footBlueCont p{
+    margin-top: 0px;
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    color: #FFFFFFAA;
+}
