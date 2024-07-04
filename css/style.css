@@ -7,7 +7,7 @@ body {
 }
 header{
     width: 100%;
-    min-width: 1000px;
+    min-width: 1466px;
     height: 1080px;
     margin: 0;
     background: #141024;
@@ -15,9 +15,14 @@ header{
 header #upHead{
    display: flex;
    justify-content: space-between;
+   width: 1166px;
+   margin: 0 auto 0 auto;
    padding-top: 30px;
-   margin-left: 30px;
-   margin-right: 30px;
+   padding-left: 30px;
+   padding-right: 30px;
+   box-sizing: border-box;
+/*   margin-left: 30px;
+   margin-right: 30px;*/
 }
 header #upHead h1{
     margin: 0px;
@@ -52,7 +57,7 @@ header #recordCourse div:first-child{
     margin-top: 230px;
 }
 header #recordCourse div:first-child h1{
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     font-family: Jost;
     font-size: 70px;
     font-weight: 600;
@@ -183,5 +188,79 @@ header #recordCourse div:last-child img:last-child{
     line-height: 28.8px;
     text-align: left;
     color: #141024AA;
+}
+/* 
+    YOUR TRAINERS
+*/
+#divYourTrainers{
+    width: 1160px;
+    margin: 120px auto 0 auto;          
+}
+#divYourTrainers h1{
+    margin-bottom: 60px;
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: left;
 
+}
+#divYourTrainers #trainersFlex{
+    display: flex;
+    gap: 40px;
+}
+#trainersFlex .trainerItem{
+    
+}
+#trainersFlex .trainerItem h3{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: left;
+    color: #141024;
+
+}
+#trainersFlex .trainerItem p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: #141024;
+
+}
+#trainersFlex .trainerItem a{
+    margin-top: 20px;
+   /* margin-bottom: 0px;*/
+    text-decoration: none;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left; 
+    color:#D52027;
+
+}
+#paginator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#linePaginator{
+    width: 380px;
+    height: 5px;
+    
+    background-color:  #AAAAAA;
+}
+
+#lineBlack{
+    width: 260px;
+    height: 4px;
+    background-color: black;
 }
