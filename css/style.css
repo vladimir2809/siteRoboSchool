@@ -264,3 +264,77 @@ header #recordCourse div:last-child img:last-child{
     height: 4px;
     background-color: black;
 }
+/*
+    SELECT PACK
+*/
+#divSelectPack{
+    width: 1160px;
+    height: 640px;
+    margin: 120px auto 0 auto;
+}
+#divSelectPack h1{
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: left;
+}
+#divSelectPack #packsFlex{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+#packsFlex .packItem{
+    width: 360px;
+    height: 460px;
+    border: 1px solid #14102422;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+}
+#packsFlex .packItem h3{
+    padding-top: 40px;
+    margin-top: 0px;
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+
+}
+#packsFlex .packItem h2{
+    margin-top: 63px;
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: center;
+
+}
+#packsFlex .packItem p{
+    width: 250px;
+    margin: 20px auto 0 auto;
+   /* text-align: center;*/
+}
+#packsFlex .packItem button{
+    width: 250px;
+    height: 70px;
+    margin-top: 60px;
+    border: 1px solid #D52027;
+    background-color: #D52027;
+    color: white;
+}
+
+#packsFlex .packItem:first-child{
+    width: 360px;
+    height: 500px;
+    background-color: #141024;
+    color: white;
+}
+#packsFlex .packItem:first-child h2{
+    margin-top: 83px;
+}
+#packsFlex .packItem:first-child button{
+    margin-top: 52px;
+}
