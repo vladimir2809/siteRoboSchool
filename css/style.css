@@ -444,3 +444,100 @@ footer #footRed{
     text-align: left;
     color: #FFFFFFAA;
 }
+/*
+    MODAL WINDOW
+*/
+#divModal{
+    width: 948px;
+    height: 768px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+#divFlex1{
+    display: flex;
+    justify-content: space-between;
+}
+#divFlex1>p{
+    margin-top: 0px;
+}
+#divPhotoAndNameFlex{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+#divPhotoAndNameFlex img:first-child{
+    width: 160px;
+    height: 222px;
+}
+#divPhotoAndNameFlex h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: left;
+    color:#141024;
+
+}
+#divPhotoAndNameFlex p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: #141024AA;
+}
+#divPhotoAndNameFlex img:last-child{
+    margin-left: 10px;
+}
+#selectDescription{
+    margin-top: 40px;
+}
+#divHr{
+    width: 846px;
+    height: 1px;
+    margin-top: 20px;
+    border: 1px solid #14102422;
+}
+#selectDescription a{
+    margin-left: 180px;
+    text-decoration: none;
+    color: #00000088;
+}
+#selectDescription a:first-child{
+     margin-left: 0px;
+     color: #FF000088;
+}
+#teacherDescription{
+    width: 846px;
+    height: 340px;
+    margin-top: 40px;
+   /* padding-top: 20px;*/
+    /*border-top: 1px solid black;*/
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+#teacherDescription p{
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color:#141024;
+}
+#teacherDescription h4{
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: left;
+    
+    color:#141024;
+
+}
