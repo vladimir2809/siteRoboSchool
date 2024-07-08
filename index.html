@@ -6,6 +6,7 @@
     <title>Robo School</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
 </head>
 <body>
     <header>
@@ -97,39 +98,58 @@
         <h1>
             Профессиональные тренеры
         </h1>
-        <div id="trainersFlex">
-            <!-- item 1-->
-            <div class="trainerItem">
-                <img src="img/trainer1.jpg">
-                <h3>Ирина Лайм</h3>
-                <p>преподаватель по робототехнике</p>
-                <a href="">Подробнее</a>
-            </div>
+        <div id="carousel">
+            <div id="trainersFlex">
+                <!-- item 1-->
+                <div class="trainerItem">
+                    <img src="img/trainer1.jpg">
+                    <h3>Ирина Лайм</h3>
+                    <p>преподаватель по робототехнике</p>
+                    <a href="">Подробнее</a>
+                </div>
 
-            <!-- item 2-->
-            <div class="trainerItem">
-                <img src="img/trainer2.jpg">
-                <h3>Марина Орлова</h3>
-                <p>преподаватель по робототехнике</p>
-                <a href="">Подробнее</a>
-            </div>
+                <!-- item 2-->
+                <div class="trainerItem">
+                    <img src="img/trainer2.jpg">
+                    <h3>Марина Орлова</h3>
+                    <p>преподаватель по робототехнике</p>
+                    <a href="">Подробнее</a>
+                </div>
 
-            <!-- item 3-->
-            <div class="trainerItem">
-                <img src="img/trainer3.jpg">
-                <h3>Максим Петров</h3>
-                <p>преподаватель по программированию</p>
-                <a href="">Подробнее</a>
-            </div>
+                <!-- item 3-->
+                <div class="trainerItem">
+                    <img src="img/trainer3.jpg">
+                    <h3>Максим Петров</h3>
+                    <p>преподаватель по программированию</p>
+                    <a href="">Подробнее</a>
+                </div>
 
+
+                <!-- item 4-->
+                <div class="trainerItem">
+                    <img src="img/trainer4.jpg">
+                    <h3>Константин Назаров</h3>
+                    <p>преподаватель по робототехнике</p>
+                    <a href="">Подробнее</a>
+                </div>
+
+                <!-- item 5-->
+                <div class="trainerItem">
+                    <img src="img/trainer5.jpg">
+                    <h3>Лиза Весенняя</h3>
+                    <p>преподаватель по программированию</p>
+                    <a href="">Подробнее</a>
+                </div>
+
+            </div>
         </div>
         <div id="paginator">
             <div id="linePaginator">
                 <div id="lineBlack"></div>
             </div>
             <div id="arrows">
-                <img src="img/arrowLeft.svg">
-                <img src="img/arrowRight.svg">
+                <img id="btnLeft" src="img/arrowLeft.svg">
+                <img id="btnRight" src="img/arrowRight.svg">
             </div>
         </div>
     </div>
@@ -216,7 +236,7 @@
             <a href="">Закрыть</a>
         </div>
         <div id="selectDescription">
-            <a href="">образование</a>
+            <a href="" class="selectRed">образование</a>
             <a href="">Опыт работы</a>
             <a href="">Награды</a>
         </div>

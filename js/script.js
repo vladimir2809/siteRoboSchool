@@ -58,6 +58,8 @@ function addEventLink() {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse sequi ut consequuntur id quo ab pariatur, voluptatum dicta culpa eius odit quibusdam quos aliquid voluptatibus non omnis praesentium illum facilis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, vel voluptas aspernatur voluptatem consequuntur animi consectetur quidem similique error expedita natus odit illo harum! Nihil facilis consequuntur quod amet dignissimos.
             </p>
             `;
+            
+            setRedLink(linkEducation);
         });
         linkExperience.addEventListener('click', function (event) {
             event.preventDefault();
@@ -71,6 +73,7 @@ function addEventLink() {
                facere alias repudiandae, eveniet odit dolorem illo dolores
             </p>
             `;
+            setRedLink(linkExperience);
         });
         linkReward.addEventListener('click', function (event) {
             event.preventDefault();
@@ -84,7 +87,15 @@ function addEventLink() {
                facere alias repudiandae, eveniet odit dolorem illo dolores
             </p>
             `;
+            setRedLink(linkReward);
         });
 
     }
+}
+function setRedLink(elem)
+{
+    linkEducation.classList.remove('selectRed');
+    linkExperience.classList.remove('selectRed');
+    linkReward.classList.remove('selectRed');
+    elem.classList.add("selectRed");
 }

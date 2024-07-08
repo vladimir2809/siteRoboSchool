@@ -189,12 +189,19 @@ header #recordCourse div:last-child img:last-child{
     text-align: left;
     color: #141024AA;
 }
+#carousel{
+    position: relative;
+   /* background-color: #0000FF;
+    padding-left: 100px;
+    padding-right: 100px;*/
+}
 /* 
     YOUR TRAINERS
 */
 #divYourTrainers{
     width: 1160px;
-    margin: 120px auto 0 auto;          
+    margin: 120px auto 0 auto;  
+    overflow: hidden;       
 }
 #divYourTrainers h1{
     margin-bottom: 60px;
@@ -203,13 +210,17 @@ header #recordCourse div:last-child img:last-child{
     font-weight: 600;
     line-height: 80px;
     text-align: left;
+    
 
 }
 #divYourTrainers #trainersFlex{
     display: flex;
     gap: 40px;
+    /*overflow: hidden;*/
 }
-#trainersFlex .trainerItem{
+#trainersFlex .trainerItem img{
+    width: 360px;
+    height: 500px;
     
 }
 #trainersFlex .trainerItem h3{
@@ -519,6 +530,9 @@ footer #footRed{
 }
 #selectDescription a:first-child{
      margin-left: 0px;
+     /*color: #00000088;*/
+}
+#selectDescription .selectRed{
      color: #FF000088;
 }
 #teacherDescription{
@@ -548,6 +562,12 @@ footer #footRed{
     
     color:#141024;
 
+}
+#teacherDescription h4:first-child{
+    margin-top: 3px;
+}
+#teacherDescription p:first-child{
+    margin-top: 3px;
 }
 /*
     backGround grey
