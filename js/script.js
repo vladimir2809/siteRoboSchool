@@ -8,6 +8,7 @@ var linkReward = null;
 var flagOpenModal = false;
 var teacherDescription = null;
 window.addEventListener('load', function () {
+    hangOut();
     linkToDescrArr = document.querySelectorAll('.trainerItem a');
     modal = document.getElementById('divModal');
     background = document.getElementById('divBackgroundGrey');

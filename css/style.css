@@ -2,6 +2,10 @@
     font-family: Jost;
     src: url(../fonts/Jost-Regular.ttf);
 }
+/*.btnAnimate*/button:hover{
+    background-color: white;
+ /*   transition-duration: 1s;*/
+}
 body {
      margin: 0;
 }
@@ -37,6 +41,9 @@ header #upHead div{
     display: flex;
     align-items: center;
     gap: 40px;
+}
+header #upHead div a{
+    text-decoration: none;
 }
 header #upHead div p{
     margin: 0px;
@@ -80,6 +87,12 @@ header #recordCourse div:first-child button{
     height: 80px;
     background: #D52027;
     color: white;
+    transition-duration: 1s;
+}
+header #recordCourse div:first-child button:hover{
+    background-color: white;
+    color: red;
+    transition-duration: 1s;
 }
 header #recordCourse div:last-child{
 }
@@ -271,6 +284,8 @@ header #recordCourse div:last-child img:last-child{
 }
 
 #lineBlack{
+    position: relative;
+    left: 0;
     width: 260px;
     height: 4px;
     background-color: black;
@@ -282,6 +297,7 @@ header #recordCourse div:last-child img:last-child{
     width: 1160px;
     height: 640px;
     margin: 120px auto 0 auto;
+    box-sizing: border-box;
 }
 #divSelectPack h1{
     font-family: Jost;
@@ -337,11 +353,12 @@ header #recordCourse div:last-child img:last-child{
     color: white;
 }
 
-#packsFlex .packItem:first-child{
+#packsFlex .packItem:hover/*:first-child*/{
     width: 360px;
     height: 500px;
     background-color: #141024;
     color: white;
+    transition-duration: 0.3s;
 }
 #packsFlex .packItem:first-child h2{
     margin-top: 83px;
@@ -417,6 +434,12 @@ footer #footRed{
     border-radius: 5px;
     background-color: #141024;
     color: white;
+    transition-duration: 1s;
+}
+#footRedCont #footRedForm button:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
 }
 /* foot blue*/
 #footBlue{

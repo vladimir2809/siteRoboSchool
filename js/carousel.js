@@ -4,7 +4,10 @@ var btnRight = null;
 var trainersFlex = null;
 var trainerItemArr = [];
 var pos = -2000; 
-var position =pos-0;
+var position =pos;
+var positionLine = 0;
+var lineBlack = null;
+var lineIntervalPos = 120;
 var numStep = 0;
 var dir = null;
 var moving = false;
@@ -15,14 +18,29 @@ window.addEventListener('load', function () {
     btnRight = document.getElementById('btnRight');
     trainersFlex = document.getElementById('trainersFlex');
     trainerItemArr = document.querySelectorAll(".trainerItem");
-    hangOut();
+    lineBlack=document.getElementById('lineBlack');
+    //positionLine = parseInt(lineBlack.style.left,10);
+    console.log (positionLine);
+   /* hangOut();*/
     carousel.style.left = position + 'px';
     btnLeft.addEventListener("click", function () {
-        if (moving == false) move(0);
+        if (moving == false)
+        {
+            
+            numStep--;
+            if (numStep < 0) numStep = 4;
+            move(0);
+        }
         //hangOut(0);
     });
     btnRight.addEventListener("click", function () {
-        if (moving == false) move(1);
+        if (moving == false) 
+        {
+           
+            numStep++;
+            if (numStep > 4) numStep = 0;
+            move(1);
+        }
        
     });
    
@@ -30,11 +48,26 @@ window.addEventListener('load', function () {
 function move(dir2)
 {
     dir = dir2;
+  
     let interval=setInterval(function () {
         moving = true;
-        if (dir==0)  position+=10;
-        if (dir==1)  position-=10;
+        if (dir==0) 
+        {
+            position+=10;
+           // positionLine--;
+        }
+        if (dir==1)  
+        {
+            position-=10;
+         //   positionLine++;
+        }
+     
+        /*if (positionLine > stepLine * (numStep) && positionLine < stepLine * (numStep + 1))
+        {
+
+        }*/
         carousel.style.left = position + 'px';
+       
         if (/*dir == 0 && */position % (width) == 0)
         {
             clearInterval(interval);
@@ -46,7 +79,26 @@ function move(dir2)
     {
         position = pos;
     }
-    numStep = position / (width);
+    stepLine = lineIntervalPos / 4;
+    leftAimLine = stepLine * numStep;
+    let speed = Math.abs(positionLine - leftAimLine)/30;
+    let interval2 = setInterval(function () {
+        
+        if (positionLine>leftAimLine)
+        {
+            positionLine-=speed;
+        }
+        if (positionLine<leftAimLine)
+        {
+            positionLine+=speed;
+        }
+        if (Math.abs(positionLine - leftAimLine)<3)
+        {
+            clearInterval(interval2);
+        }
+        lineBlack.style.left = positionLine + 'px';
+    },10);
+    /*numStep = position / (width);*/
     console.log(position, numStep);
 
 }
@@ -83,5 +135,6 @@ function hangOut() // перетусовать елеменнты
         let clone = itemArr[i].cloneNode(true);
         trainerItemArr[0].before(clone);
     }
+   /* linkToDescrArr = document.querySelectorAll('.trainerItem a');*/
 }
     
